@@ -10,6 +10,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: lightgray;
+	overflow: hidden;
 }
 .slide-container {
 	position: relative;
@@ -72,4 +73,17 @@ button {
 
 .hidden {
 	display: none;
+}
+
+@media (max-width: 768px) {
+	.slide-container {
+		width: 350px;
+		height: 250px;
+	}
+	.btn-container {
+		width: 350px;
+	}
+	button {
+		padding: 1em 2em;
+	}
 }
